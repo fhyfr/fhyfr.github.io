@@ -256,6 +256,14 @@ img {
     color: var(--first-color-alt);
 }
 
+.langWrap{
+    margin: 0 .5rem;
+}
+
+.lang__link{
+    margin-right: .25rem;
+}
+
 /* show menu */
 .show-menu {
     bottom: 0;

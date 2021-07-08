@@ -23,32 +23,32 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="#home" class="nav__link nav__home active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="#about" class="nav__link nav__about">
                                 <i class="uil uil-user nav__icon"></i> About
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="#skills" class="nav__link nav__skills">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">
+                            <a href="#services" class="nav__link nav__services">
                                 <i class="uil uil-briefcase-alt nav__icon"></i> Services
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
+                            <a href="#portfolio" class="nav__link nav__portfolio">
                                 <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                            <a href="#contact" class="nav__link nav__contact">
                                 <i class="uil uil-message nav__icon"></i>Contact me
                             </a>
                         </li>
@@ -57,12 +57,19 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Language change button -->
+                    <div class="langWrap">
+                        <a href="#en" language="english" class="lang__link" ><img src="https://www.countryflags.io/us/flat/16.png"></a>
+                        <a href="#id" language="bahasa" class="lang__link"><img src="https://www.countryflags.io/id/flat/16.png"></a> 
+                    </div>
+
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
+
                 </div>
             </nav>
         </header>
@@ -106,8 +113,8 @@
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Firman</h1>
                             <h3 class="home__subtitle">Backend Developer</h3>
-                            <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam, vel iure cupiditate rerum soluta, nulla id, eveniet aperiam illum amet accusamus deserunt recusandae distinctio perferendis. Quas vel facere iste?</p>
-                            <a href="#contact" class="button button--flex">
+                            <p class="home__description">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
+                            <a href="#contact" class="button button--flex" id="contact-button">
                                 Contact me <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
@@ -125,8 +132,8 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+                <h2 class="section__title about__title">About Me</h2>
+                <span class="section__subtitle about__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
                     <img src="assets/img/about.jpg" alt="" class="about__img">
@@ -162,8 +169,8 @@
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My Technical Level</span>
+                <h2 class="section__title skills__section-title">Skills</h2>
+                <span class="section__subtitle skills__section-subtitle">My Technical Level</span>
 
                 <div class="skills__container container grid">
                     <div>
@@ -331,8 +338,8 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-                <h2 class="section__title">Qualitification</h2>
-                <span class="section__subtitle">My Personal Journey</span>
+                <h2 class="section__title qualification__section-title">Qualitification</h2>
+                <span class="section__subtitle qualification__section-subtitle">My Personal Journey</span>
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
@@ -485,8 +492,8 @@
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What i offer</span>
+                <h2 class="section__title services__section-title">Services</h2>
+                <span class="section__subtitle services__section-subtitle">What i offer</span>
 
                 <div class="services__container container grid">
                     <!--==================== SERVICES 1 ====================-->
@@ -619,8 +626,8 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most Recent Work</span>
+                <h2 class="section__title portfolio__section-title">Portfolio</h2>
+                <span class="section__subtitle portfolio__section-subtitle">Most Recent Work</span>
 
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
@@ -689,7 +696,7 @@
                         <div class="project__data">
                             <h2 class="project__title">You have a new project</h2>
                             <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
-                            <a href="#contact" class="button button--flex button--white">
+                            <a href="#contact" class="button button--flex button--white" id="contact-button">
                                 Contact Me
                                 <i class="uil uil-message project__icon button__icon"></i>
                             </a>
@@ -703,8 +710,8 @@
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
-                <h2 class="section__title">Testimonial</h2>
-                <span class="section__subtitle">My Client Saying</span>
+                <h2 class="section__title testimonial__section-title">Testimonial</h2>
+                <span class="section__subtitle testimonial__section-subtitle">My Client Saying</span>
 
                 <div class="testimonial__container container swiper-container">
                     <div class="swiper-wrapper">
@@ -791,8 +798,8 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title contact__section-title">Contact Me</h2>
+                <span class="section__subtitle contact__section-subtitle">Get in touch</span>
 
                 <div class="contact__container container grid">
                     <div class="contact__information">
@@ -900,5 +907,8 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="./assets/js/main.js"></script>
+
+        <!-- Multi Language -->
+        <script src="./assets/js/change-language.js"></script>
     </body>
 </html>
