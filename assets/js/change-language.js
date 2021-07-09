@@ -6,7 +6,7 @@ let data = {
     "nav_skills" : "Skills",
     "nav_services" : "Services",
     "nav_portfolio" : "Portfolio",
-    "nav_contact" : "Contactme",
+    "nav_contact" : "Contact me",
     "home_title" : "Hi, I'm Firman",
     "home_description" : "Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.",
     "contact_button" : "Contact me",
