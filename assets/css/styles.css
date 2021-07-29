@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 1; /*Purple 250 - Green 142 - Blue 230 - Pink 340 - Red 1*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -969,7 +969,7 @@ img {
 .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color-light);
+    color: #fff;
     margin-top: var(--mb-3);
 }
 
