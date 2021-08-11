@@ -1,11 +1,14 @@
 * HOME
 home__social
-https://www.linkedin.com/
-https://dribbble.com/
-https://github.com/
+https://www.linkedin.com/in/fhyfr/
+https://www.instagram.com/fhy.firman/
+https://github.com/fhyfr
+
+home__title
+Hi, I'm Firman
 
 home__description
-High level experience in web design and development knowledge, producing quality work.
+High level experience in backend development, eager to learn, producing quality work.
 
 
 * ABOUT

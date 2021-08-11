@@ -878,7 +878,10 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 3rem;
+    justify-content: center;
 }
 
 .contact__information{
