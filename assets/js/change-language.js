@@ -4,24 +4,27 @@ let data = {
     "nav_home" : "Home",
     "nav_about" : "About",
     "nav_skills" : "Skills",
-    "nav_services" : "Services",
     "nav_portfolio" : "Portfolio",
-    "nav_contact" : "Contact me",
+    "nav_contact" : "Contact",
+
     "home_title" : "Hi, I'm Firman",
-    "home_description" : "Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.",
-    "contact_button" : "Contact me",
+    "home_description" : "I'm specialized in software backend development.",
+    "contact_button" : "Hire me",
+    "home_scroll" : "Scroll Down",
+
     "about_title" : "About Me",
-    "about_subtitle" : "My Introduction",
+    "about_subtitle" : "Introduction",
+    "about_description" : "A highly motivated and self-learner Software Engineer who has an interest in solving problems with algorithms and code. I also use machine learning for the better future of web technology. Has experience of developing systems using PHP, Node.js, Python and other technologies",
+
     "skills_section_title" : "Skills",
     "skills_section_subtitle" : "My Technical Level",
+
     "qualification_section_title" : "Qualification",
     "qualification_section_subtitle" : "My Personal Journey",
-    "services_section_title" : "Services",
-    "services_section_subtitle" : "What i offer",
+
     "portfolio_section_title" : "Portfolio",
     "portfolio_section_subtitle" : "Most Recent Work",
-    "testimonial_section_title" : "Testimonial",
-    "testimonial_section_subtitle" : "My Client Saying",
+
     "contact_section_title" : "Contact Me",
     "contact_section_subtitle" : "Get in touch",
   },
@@ -29,25 +32,28 @@ let data = {
     "nav_home" : "Beranda",
     "nav_about" : "Tentang",
     "nav_skills" : "Skill",
-    "nav_services" : "Layanan",
     "nav_portfolio" : "Portofolio",
     "nav_contact" : "Kontak",
+    
     "home_title" : "Halo, Saya Firman",
-    "home_description" : "Web Developer, dengan pengetahuan luas dan pengalaman bertahun-tahun, bekerja dalam teknologi web dan desain Ui/Ux, memberikan pekerjaan yang berkualitas.",
-    "contact_button" : "Hubungi saya",
+    "home_description" : "Saya seorang Software Engineer dengan spesialisasi di bidang Backend Development.",
+    "contact_button" : "Terhubung",
+    "home_scroll" : "Geser ke bawah",
+
     "about_title" : "Tentang saya",
-    "about_subtitle" : "Perkenalkan",
+    "about_subtitle" : "Perkenalan",
+    "about_description" : "Seorang Software Engineer yang memiliki semangat tinggi untuk belajar dan memecahkan masalah dengan algoritma dan kode. Saya juga menggunakan Machine Learning untuk masa depan teknologi web yang lebih baik. Memiliki pengalaman mengembangkan sistem menggunakan PHP, Node.js, Python, dan teknologi lainnya",
+
     "skills_section_title" : "Skill",
-    "skills_section_subtitle" : "Level teknikal",
+    "skills_section_subtitle" : "Kemampuan",
+
     "qualification_section_title" : "Kualifikasi",
-    "qualification_section_subtitle" : "Pengalaman saya",
-    "services_section_title" : "Layanan",
-    "services_section_subtitle" : "Dapatkan layanan terbaikmu",
+    "qualification_section_subtitle" : "Pengalaman",
+
     "portfolio_section_title" : "Portofolio",
     "portfolio_section_subtitle" : "Proyek terbaru",
-    "testimonial_section_title" : "Testimoni",
-    "testimonial_section_subtitle" : "Lihat apa kata pelanggan",
-    "contact_section_title" : "Hubungi Saya",
+
+    "contact_section_title" : "Kontak",
     "contact_section_subtitle" : "Mari terhubung",
   }
 }
@@ -58,53 +64,60 @@ const langEl = document.querySelector('.langWrap'),
       navHome = document.querySelector('.nav__home'),
       navAbout = document.querySelector('.nav__about'),
       navSkills = document.querySelector('.nav__skills'),
-      navServices = document.querySelector('.nav__services'),
       navPortfolio = document.querySelector('.nav__portfolio'),
       navContact = document.querySelector('.nav__contact'),
+
       homeTitle = document.querySelector('.home__title'),
       homeDesc = document.querySelector('.home__description'),
+      contactButton = document.getElementById('contact__button'),
+      homeScrollBtn = document.querySelector('.home__scroll-name'),
+
       aboutTitle = document.querySelector('.about__title'),
       aboutSubtitle = document.querySelector('.about__subtitle'),
+      aboutDesc = document.querySelector('.about__description'),
+
       skillsTitle = document.querySelector('.skills__section-title'),
       skillsSubtitle = document.querySelector('.skills__section-subtitle'),
+
       qualificationTitle = document.querySelector('.qualification__section-title'),
       qualificationSubtitle = document.querySelector('.qualification__section-subtitle'),
-      servicesTitle = document.querySelector('.services__section-title'),
-      servicesSubtitle = document.querySelector('.services__section-subtitle'),
+
       portfolioTitle = document.querySelector('.portfolio__section-title'),
       portfolioSubtitle = document.querySelector('.portfolio__section-subtitle'),
-      testimonialTitle = document.querySelector('.testimonial__section-title'),
-      testimonialSubtitle = document.querySelector('.testimonial__section-subtitle'),
+
       contactTitle = document.querySelector('.contact__section-title'),
       contactSubtitle = document.querySelector('.contact__section-subtitle');
 
 link.forEach(el => {
-    el.addEventListener('click', ()=> {
+  el.addEventListener('click', ()=> {
 
-        const attr = el.getAttribute('language');
-        
-        navHome.textContent = data[attr].nav_home;
-        navAbout.textContent = data[attr].nav_about;
-        navSkills.textContent = data[attr].nav_skills;
-        navServices.textContent = data[attr].nav_services;
-        navPortfolio.textContent = data[attr].nav_portfolio;
-        navContact.textContent = data[attr].nav_contact;
+    const attr = el.getAttribute('language');
+      
+    navHome.textContent = data[attr].nav_home;
+    navAbout.textContent = data[attr].nav_about;
+    navSkills.textContent = data[attr].nav_skills;
+    navPortfolio.textContent = data[attr].nav_portfolio;
+    navContact.textContent = data[attr].nav_contact;
 
-        homeTitle.textContent = data[attr].home_title;
-        homeDesc.textContent = data[attr].home_description;
-        aboutTitle.textContent = data[attr].about_title;
-        aboutSubtitle.textContent = data[attr].about_subtitle;
-        skillsTitle.textContent = data[attr].skills_section_title;
-        skillsSubtitle.textContent = data[attr].skills_section_subtitle;
-        qualificationTitle.textContent = data[attr].qualification_section_title;
-        qualificationSubtitle.textContent = data[attr].qualification_section_subtitle;
-        servicesTitle.textContent = data[attr].services_section_title;
-        servicesSubtitle.textContent = data[attr].services_section_subtitle;
-        portfolioTitle.textContent = data[attr].portfolio_section_title;
-        portfolioSubtitle.textContent = data[attr].portfolio_section_subtitle;
-        testimonialTitle.textContent = data[attr].testimonial_section_title;
-        testimonialSubtitle.textContent = data[attr].testimonial_section_subtitle;
-        contactTitle.textContent = data[attr].contact_section_title;
-        contactSubtitle.textContent = data[attr].contact_section_subtitle;
-    });
+    homeTitle.textContent = data[attr].home_title;
+    homeDesc.textContent = data[attr].home_description;
+    contactButton.textContent = data[attr].contact_button;
+    homeScrollBtn.textContent = data[attr].home_scroll;
+
+    aboutTitle.textContent = data[attr].about_title;
+    aboutSubtitle.textContent = data[attr].about_subtitle;
+    aboutDesc.textContent = data[attr].about_description;
+
+    skillsTitle.textContent = data[attr].skills_section_title;
+    skillsSubtitle.textContent = data[attr].skills_section_subtitle;
+
+    qualificationTitle.textContent = data[attr].qualification_section_title;
+    qualificationSubtitle.textContent = data[attr].qualification_section_subtitle;
+
+    portfolioTitle.textContent = data[attr].portfolio_section_title;
+    portfolioSubtitle.textContent = data[attr].portfolio_section_subtitle;
+    
+    contactTitle.textContent = data[attr].contact_section_title;
+    contactSubtitle.textContent = data[attr].contact_section_subtitle;
+  });
 });
